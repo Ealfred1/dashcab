@@ -95,6 +95,7 @@ li .nav-links:hover {
     position: absolute;
     right: 0;
     /* width: 50%; */
+    text-align: right;
 }
 
 .info {
@@ -189,10 +190,11 @@ section.main {
         background-color: #111; 
         overflow-x: hidden;
         transition: 0.7s; 
+        padding-top: 60px;
     }
 	
 	/* Position and style the close button (top right corner) */
-	li .closenav-btn {
+	.dropdown li .closenav-btn {
 		  position: absolute;
 		  top: 0;
 		  right: 25px;
@@ -202,18 +204,33 @@ section.main {
 	}
 
     /*styling the links*/
-    li .nav-links {
+    .dropdown li a {
         display:  block;
         color:  white;
         padding:  15px;
         transition:  0.3s;
     
-    }
+	}
+	
+	li .nav-links-last, .nav-links-bg {
+		margin-top: 5%;
+	}
 
-     li a:hover {
+    /* styling the links on hover*/
+
+     li .nav-links:hover {
         color: #000;
 		background: rgba(4, 41, 141, 0.993);
     }
+    
+    li .nav-links-last:hover {
+        color: #000;
+		background: rgba(4, 41, 141, 0.993);
+    }
+	
+	li .closenav-btn:hover {
+		color: rgba(4, 41, 141, 0.993);
+	}
 
     /*adjusting the info  bar to fit the screen*/
     .info-bar {
@@ -247,7 +264,7 @@ section.main {
     .info-bar {
         position: none;
         width: 100%;
-        margin: 17px 0 10px 0;
+         margin: 17px 0 10px 0;
     }
 	
     /*adding padding to the info and making sure it stays on a line*/
@@ -257,6 +274,10 @@ section.main {
 	  font-size: 8px;
 	  font-weight: 700;
     }
+	
+	.image img {
+		margin-top: 20px;
+	}
 	
 	
 }
